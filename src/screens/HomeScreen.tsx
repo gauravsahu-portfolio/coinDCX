@@ -1,10 +1,16 @@
-import { View, Text } from 'react-native';
+import { View, Image } from 'react-native';
 import React from 'react';
+import BannerSection from '../components/HomeScreen/BannerSection';
+import HomeContentSection from '../components/HomeScreen/HomeContentSection';
+import HomeTabSection from '../components/HomeScreen/HomeTabSection';
 
 const HomeScreen = () => {
   return (
-    <View>
-      <Text>HomeScreen</Text>
+    <View className='flex-col items-center'>
+      {/* Banner Section */}
+      <BannerSection />
+      <HomeContentSection />
+        <HomeTabSection />
     </View>
   )
 }
