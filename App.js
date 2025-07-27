@@ -8,12 +8,13 @@ import InvestmentScreen from "./src/screens/InvestmentScreen";
 import Foundation from 'react-native-vector-icons/Foundation';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import Entypo from 'react-native-vector-icons/Entypo';
-
+import CryptoDetails, { bottomSheetRef } from "./src/components/SpecialComponents/CryptoDetails";
+import { useEffect } from "react";
 
 const Tab = createBottomTabNavigator();
 
-
 export default function App() {
+
   return (
     <TailwindProvider>
       <NavigationContainer>
